@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A letter for you</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     MUSIC: add your song file between the quotes below.
+     Example: src="music/our-song.mp3"
+     ============================================================ -->
+<audio id="bgm" loop preload="auto" src=""></audio>
+
+<canvas id="petals" aria-hidden="true"></canvas>
+
+<button class="music" id="musicBtn" type="button" aria-label="Toggle music">
+  <svg class="icon-on" viewBox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg>
+  <svg class="icon-off" viewBox="0 0 24 24"><path d="M3 9v6h4l5 4V5L7 9H3zm13.6 3 2.4-2.4-1.4-1.4-2.4 2.4-2.4-2.4-1.4 1.4 2.4 2.4-2.4 2.4 1.4 1.4 2.4-2.4 2.4 2.4 1.4-1.4-2.4-2.4z"/></svg>
+</button>
+
+<main class="stage" id="stage">
+  <div class="env" id="env">
+    <div class="env-back"></div>
+    <div class="env-card"><span>For you</span></div>
+    <div class="env-front"></div>
+    <div class="env-flap"></div>
+    <button class="seal" id="seal" type="button" aria-label="Open the letter">
+      <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2 0 3.7 1.1 5.3 3 1.6-1.9 3.3-3 5.3-3 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21z"/></svg>
+    </button>
+  </div>
+  <p class="hint">Tap the seal to open</p>
+</main>
+
+<!-- ============================================================
+     YOUR LETTER: edit the text below.
+     ============================================================ -->
+<article class="letter" id="letter" tabindex="-1" aria-label="Love letter">
+  <h1>My dearest,</h1>
+
+  <p>I have started this letter more times than I can count, and every time the words feel too small for what I want to say. So I will begin with the simplest thing: you make my days softer.</p>
+
+  <p>It is in the little moments that I find you most. The way you laugh before you finish the joke. The quiet of a morning with you in it. The way home stopped being a place and became a person.</p>
+
+  <span class="divider"></span>
+
+  <p>Thank you for your patience on the days I was hard to love, and for staying through the ordinary ones. I think that is where love really lives.</p>
+
+  <p>Whatever comes next, I want to meet it beside you.</p>
+
+  <div class="sign">
+    <span>Always yours,</span>
+    <strong>Jae</strong>
+  </div>
+</article>
+
+<script src="script.js"></script>
+</body>
+</html>
